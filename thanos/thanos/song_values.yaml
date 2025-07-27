@@ -1,0 +1,38 @@
+query:
+  enabled: true
+
+storegateway:
+  enabled: true
+
+compactor:
+  enabled: true
+
+bucketweb:
+  enabled: true
+
+#ruler:
+#  enabled: true
+
+minio:
+  enabled: true
+# service:
+#   type: ClusterIP   
+  defaultBuckets: thanos
+  auth:
+    rootUser: admin
+    rootPassword: miniominio
+
+#objstoreConfig:
+# type: S3
+# config:
+#   bucket: thanos
+#   endpoint: thanos-minio.monitoring.svc.cluster.local:9000
+#   access_key: admin
+#   secret_key: miniominio
+#   insecure: true
+
+existingObjstoreSecret: "thanos-objstore-secret"
+
+existingObjstoreSecretItems:
+  - key: objstore.yml
+    path: objstore.yml
