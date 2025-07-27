@@ -1,0 +1,13 @@
+query:
+  enabled: true
+storegateway:
+  enabled: true
+bucketweb:
+  enabled: true
+compactor:
+  enabled: true
+
+existingObjstoreSecret: minio-objstore-config
+existingObjstoreSecretItems:
+  - key: thanos.yaml
+    path: objstore.yml
