@@ -1,9 +1,9 @@
 # song-helm-charts
 
 ```
-helm repo add <MY-REPO> https://github.com/CODEBYSONG/song-helm-charts
+helm repo add <MY_REPO> https://github.com/CODEBYSONG/song-helm-charts
 helm repo update
-helm install <MY-RELEASE> <MY-REPO>/<MY-CHART>
+helm install <MY_RELEASE> <MY_REPO>/<MY_CHART>
 ```
 <br>
 
