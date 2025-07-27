@@ -34,7 +34,7 @@ spec:
         {{- end }}
       annotations:
         {{- if .Values.global.graRollme }}
-        rollme: {{ toYaml.Values.global.graRollme }}
+        rollme: {{ toYaml .Values.global.graRollme }}
         {{- else }}
         rollme: {{ randAlphaNum 5 | quote }}
         {{- end }}
