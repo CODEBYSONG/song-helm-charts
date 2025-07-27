@@ -22,8 +22,8 @@ prometheus:
 #     - "prometheus.example.com"
 
 grafana:
-  enabled: false
-  adminPassword: song
+  enabled: true
+  adminPassword: ssong
 # ingress:
 #   enabled: true
 #   hosts:
