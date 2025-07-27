@@ -22,7 +22,7 @@ prometheus:
 #     - "prometheus.example.com"
 
 grafana:
-  enabled: true
+  enabled: false
   adminPassword: song
 # ingress:
 #   enabled: true
